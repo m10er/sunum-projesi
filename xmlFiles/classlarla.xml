@@ -1,0 +1,39 @@
+<suite name="Suite" >
+
+        <listeners>
+            <listener class-name="utilities.ExtentReportManager"/>
+        </listeners>
+
+<!--        <groups>-->
+<!--            <run>-->
+<!--                &lt;!&ndash; <include name="sanity"/>-->
+<!--                  <include name ="regression"/> &ndash;&gt;-->
+<!--                <include name ="smoke"/>-->
+<!--                <exclude name=""/> &ndash;&gt;-->
+<!--            </run>-->
+<!--        </groups>-->
+
+    <test thread="5" name="test">
+        <parameter name="os" value="Windows" />
+        <parameter name="browser"  value="chrome"/>
+       <classes>
+
+           <class name="tests.US_001.US_001_TC_01"></class>
+           <class name="tests.US_044.US_044_TC_05"></class>
+           <class name="tests.US_042.US_042_TC_03"></class>
+           <class name="tests.US_037.US_037_TC_02"></class>
+           <class name="tests.US_035.US_035_TC_03"></class>
+           <class name="tests.US_032.US_032_TC_04"></class>
+           <class name="tests.US_030.US_030_TC_04"></class>
+           <class name="tests.US_012.US_012_TC_03"></class>
+           <class name="tests.US_011.US_011_TC_03"></class>
+           <class name="tests.US_007.US_007_TC_04"></class>
+           <class name="tests.US_006.US_006_TC_05"></class>
+           <class name="tests.US_003.US_003_TC_01"></class>
+
+
+
+       </classes>
+    </test>
+
+</suite>
